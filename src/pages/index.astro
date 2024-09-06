@@ -1,6 +1,5 @@
 ---
-import { Image } from "astro:assets";
-import logo from "../images/logo.png";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
@@ -11,20 +10,13 @@ import logo from "../images/logo.png";
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
 
-        <title>Astro</title>
+        <title>AI-CS Wiki</title>
     </head>
 
     <body class="bg-gray-300 font-serif">
-        <header class="flex bg-gray-800">
-            <a class="p-4 flex gap-2 items-center hover:bg-gray-900" href="/">
-                <Image src={logo} alt="AI-CS Logo" class="w-16" />
-                <span class="text-white">AI-CS</span>
-            </a>
-        </header>
+        <Header />
 
-        <main class="bg-white max-w-3xl mx-auto p-3">
-            <div class="p-3"></div>
-
+        <main class="bg-white max-w-3xl mx-auto p-6">
             <h1 class="text-center text-3xl">AI-CS Wiki</h1>
             <div class="p-3"></div>
 
@@ -92,8 +84,6 @@ import logo from "../images/logo.png";
                     href="locations/manor.html">Manor (On A King's Pedestal)</a
                 >
             </div>
-
-            <div class="p-3"></div>
         </main>
     </body>
 </html>
