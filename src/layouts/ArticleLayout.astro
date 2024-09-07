@@ -12,17 +12,17 @@ const isEditedVisible =
     <div class="p-3"></div>
 
     <p class="text-gray-400">Author: {frontmatter.author}</p>
-    <p class="text-gray-400">
-        Date: {frontmatter.published}
-        {
-            isEditedVisible && (
-                <span title="Edited Date">
-                    ... (Last Edited: {frontmatter.edited})
-                </span>
-            )
-        }
-    </p>
+    <p class="text-gray-400">Published: {frontmatter.published}</p>
     <div class="p-3"></div>
+
+    {
+        isEditedVisible && (
+            <>
+                <p class="text-gray-400">Last Edited: {frontmatter.edited}</p>
+                <div class="p-3" />
+            </>
+        )
+    }
 
     <slot />
 </RootLayout>
