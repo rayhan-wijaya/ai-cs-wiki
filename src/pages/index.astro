@@ -1,84 +1,81 @@
 ---
+import RootLayout from "../layouts/RootLayout.astro";
 import Header from "../components/Header.astro";
 ---
 
-<html lang="en">
-    <head>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<RootLayout title="AI-CS Wiki">
+    <h1 class="text-center text-3xl">AI-CS Wiki</h1>
+    <div class="p-3"></div>
 
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
+    <p class="text-center">
+        Welcome to the AI-CS wiki, home to officially-written articles about the
+        series.
+    </p>
+    <div class="p-3"></div>
 
-        <title>AI-CS Wiki</title>
-    </head>
+    <h2 class="text-center text-2xl">Novels</h2>
+    <div class="p-3"></div>
 
-    <body class="bg-gray-300 font-serif">
-        <Header />
+    <div class="flex flex-col gap-1 items-center">
+        <a
+            class="text-sky-500 hover:underline text-center"
+            href="articles/on-a-kings-pedestal"
+        >
+            On A King's Pedestal
+        </a>
+        <a
+            class="text-sky-500 hover:underline text-center"
+            href="articles/set-foot-blind"
+        >
+            Set Foot Blind
+        </a>
+        <a
+            class="text-sky-500 hover:underline text-center"
+            href="articles/apocalyptic-invasion"
+        >
+            Apocalyptic Invasion (Special Edition)
+        </a>
+        <a
+            class="text-sky-500 hover:underline text-center"
+            href="articles/concentrated-solitude"
+        >
+            Concentrated Solitude (Special Edition)
+        </a>
+    </div>
+    <div class="p-3"></div>
 
-        <main class="bg-white max-w-3xl mx-auto p-6">
-            <h1 class="text-center text-3xl">AI-CS Wiki</h1>
-            <div class="p-3"></div>
+    <h2 class="text-center text-2xl">Characters</h2>
+    <div class="p-3"></div>
 
-            <p class="text-center">
-                Welcome to the AI-CS wiki, home to officially-written articles
-                about the series.
-            </p>
-            <div class="p-3"></div>
+    <div class="flex flex-wrap gap-3 justify-center">
+        <a
+            class="text-sky-500 hover:underline text-center"
+            href="articles/selenium"
+        >
+            Selenium (C-76)
+        </a>
+        <a
+            class="text-sky-500 hover:underline text-center"
+            href="articles/arsenic"
+        >
+            Arsenic (T-32)
+        </a>
+        <a
+            class="text-sky-500 hover:underline text-center"
+            href="articles/autumn"
+        >
+            Londyn
+        </a>
+    </div>
+    <div class="p-3"></div>
 
-            <h2 class="text-center text-2xl">Novels</h2>
-            <div class="p-3"></div>
+    <h2 class="text-center text-2xl">Locations</h2>
+    <div class="p-3"></div>
 
-            <div class="flex flex-col gap-1 items-center">
-                <a
-                    class="text-sky-500 hover:underline text-center"
-                    href="articles/on-a-kings-pedestal">On A King's Pedestal</a
-                >
-                <a
-                    class="text-sky-500 hover:underline text-center"
-                    href="articles/set-foot-blind">Set Foot Blind</a
-                >
-                <a
-                    class="text-sky-500 hover:underline text-center"
-                    href="articles/apocalyptic-invasion"
-                    >Apocalyptic Invasion (Special Edition)</a
-                >
-                <a
-                    class="text-sky-500 hover:underline text-center"
-                    href="articles/concentrated-solitude"
-                    >Concentrated Solitude (Special Edition)</a
-                >
-            </div>
-            <div class="p-3"></div>
-
-            <h2 class="text-center text-2xl">Characters</h2>
-            <div class="p-3"></div>
-
-            <div class="flex flex-wrap gap-3 justify-center">
-                <a
-                    class="text-sky-500 hover:underline text-center"
-                    href="articles/selenium">Selenium (C-76)</a
-                >
-                <a
-                    class="text-sky-500 hover:underline text-center"
-                    href="articles/arsenic">Arsenic (T-32)</a
-                >
-                <a
-                    class="text-sky-500 hover:underline text-center"
-                    href="articles/autumn">Londyn</a
-                >
-            </div>
-            <div class="p-3"></div>
-
-            <h2 class="text-center text-2xl">Locations</h2>
-            <div class="p-3"></div>
-
-            <div class="flex flex-wrap gap-3 justify-center">
-                <a
-                    class="text-sky-500 hover:underline text-center"
-                    href="articles/manor">Manor (On A King's Pedestal)</a
-                >
-            </div>
-        </main>
-    </body>
-</html>
+    <div class="flex flex-wrap gap-3 justify-center">
+        <a
+            class="text-sky-500 hover:underline text-center"
+            href="articles/manor">Manor (On A King's Pedestal)</a
+        >
+    </div>
+</RootLayout>
